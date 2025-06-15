@@ -1,0 +1,97 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #89ABE3, #EA738D);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.task-sections {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.task-list,
+.completed-list {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 300px;
+  flex: 1;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fe0;
+}
